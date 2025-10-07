@@ -36,7 +36,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com',
                  '127.0.0.1',]
@@ -53,11 +53,13 @@ INSTALLED_APPS = [
     'django_summernote',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'cloudinary_storage',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     "django_extensions",
     'crispy_forms',
+    'cloudinary',
     'crispy_bootstrap5',
     'blog',
     'about',
